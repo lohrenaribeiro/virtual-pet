@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Play:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="pet.css" />
+    <link rel="icon" type="image/x-icon" href="/images/alien.png">
+    <title>My Virtual Pet</title>
+  </head>
+  <body>
+    <h1>my virtual pet</h1>
+    <main>
+      <audio id="bubble">
+        <source
+          src="music/zapsplat_cartoon_bubble_pop_007_40279.mp3"
+          type="audio/mp3"
+        />
+      </audio>
+      <div class="container">
+        <div class="pet">
+          <img src="/images/creature6.gif"/>
+        </div>
+        <div class="left-side">
+          <div class="tooltip">
+            <img class="btn pizza-img" src="/images/pizza (2).png"/>
+            <span class="tooltiptext tooltip-left">Hunger</span>
+          </div>
+          <div class="tooltip">
+            <img class="btn drink-img" src="/images/water.png"/>
+            <span class="tooltiptext tooltip-left">thirst</span>
+          </div>
+          <div class="tooltip">
+            <img class="btn bath-img" src="/images/bath-tub.png"/>
+            <span class="tooltiptext tooltip-left">bath</span>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="tooltip">
+            <img class="btn heart-img" src="/images/heart.png"/>
+            <span class="tooltiptext tooltip-right">affection</span>
+          </div>
+          <div class="tooltip">
+            <img class="btn game-img" src="/images/video-game.png"/>
+            <span class="tooltiptext tooltip-right">play</span>
+          </div>
+          <div class="tooltip">
+            <img class="btn books-img" src="/images/book.png"/>
+            <span class="tooltiptext tooltip-right">study</span>
+          </div>
+        </div>
+        <button>Play again?</button>
+        <div class="progress-bar">
+          <div class="container__bar">
+            <h4>hunger</h4>
+            <div class="bar">
+              <progress
+                id="hunger"
+                data-percentage="100%"
+                value="100"
+                max="100"
+              ></progress>
+            </div>
+          </div>
+          <div class="container__bar">
+            <h4>thirst</h4>
+            <div class="bar">
+              <progress
+                id="thirst"
+                data-percentage="100%"
+                value="100"
+                max="100"
+              ></progress>
+            </div>
+          </div>
+          <div class="container__bar">
+            <h4>bath</h4>
+            <div class="bar">
+              <progress
+                id="bath"
+                data-percentage="100%"
+                value="100"
+                max="100"
+              ></progress>
+            </div>
+          </div>
+          <div class="container__bar">
+            <h4>affection</h4>
+            <div class="bar">
+              <progress
+                id="affection"
+                data-percentage="100%"
+                value="100"
+                max="100"
+              ></progress>
+            </div>
+          </div>
+          <div class="container__bar">
+            <h4>Play</h4>
+            <div class="bar">
+              <progress
+                id="fun"
+                data-percentage="100%"
+                value="100"
+                max="100"
+              ></progress>
+            </div>
+          </div>
+          <div class="container__bar">
+            <h4>study</h4>
+            <div class="bar">
+              <progress
+                id="study"
+                data-percentage="100%"
+                value="100"
+                max="100"
+              ></progress>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="pet.js"></script>
+  </body>
+</html>
